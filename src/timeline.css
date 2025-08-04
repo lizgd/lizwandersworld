@@ -1,0 +1,485 @@
+/* ===== TIMELINE PAGE STYLES ===== */
+
+/* Card Type Colors */
+:root {
+    --work-color: #ff8a41;      /* Blue for work experience */
+    --project-color: #e0ff2e;    /* Purple for projects */
+    --extracurricular-color: #aff8e2; /* Green for extracurricular */
+    --awards-color: #ffd322;     /* Orange for awards */
+    --milestones-color: #ff4958; /* Red for milestones */
+    --education-color: #e9b0ff;  /* Violet for education */
+}
+
+/* Profile Navigation */
+.profile-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-pic-nav {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* border: 2px solid rgba(255, 255, 255, 0.2); */
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
+}
+
+.profile-pic-nav:hover {
+    transform: scale(1.1) rotate(15deg);
+    border-color: rgba(255, 255, 255, 0.5);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+}
+
+/* Content Container */
+.content-container {
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100vh;
+    opacity: 0;
+    animation: fadeInPage 1.5s ease-out forwards;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Timeline Header */
+.timeline-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+.timeline-title {
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.timeline-description {
+    font-family: "Helvetica", sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Timeline Filters */
+.timeline-filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0rem;
+    margin-bottom: 6rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.filter-btn {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0.2rem 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    outline: none;
+    align-items: center;
+    width: 150px;
+}
+
+.filter-btn:hover {
+    transform: translateY(-1px);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+.filter-btn.active {
+    color: white !important;
+    opacity: 0.5;
+}
+
+/* Category colors for filter buttons */
+.filter-btn[data-type="work"] {
+    color: var(--work-color);
+}
+
+.filter-btn[data-type="project"] {
+    color: var(--project-color);
+}
+
+.filter-btn[data-type="extracurricular"] {
+    color: var(--extracurricular-color);
+}
+
+.filter-btn[data-type="awards"] {
+    color: var(--awards-color);
+}
+
+.filter-btn[data-type="milestone"] {
+    color: var(--milestones-color);
+}
+
+.filter-btn[data-type="education"] {
+    color: var(--education-color);
+}
+
+/* Timeline Container */
+.timeline-container {
+    position: relative;
+}
+
+/* Year Sections */
+.year-section {
+    /* margin-bottom: 0rem; */
+    position: relative;
+}
+
+.year-subtitle {
+    font-family: "Helvetica", sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    margin-top: -1.7rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    line-height: 1.3;
+}
+
+/* Timeline line - only visible in 2-column layout */
+.year-section::after {
+    font-family: "Helvetica", sans-serif;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 5.2rem;
+    bottom: -0rem;
+    width: 2px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2));
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Hide timeline line in single column layout */
+@media (max-width: 768px) {
+    .year-section::after {
+        display: none;
+    }
+}
+
+.year-header {
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.year-header:hover {
+    color: #fee102;
+    transform: scale(1.05);
+}
+
+/* Cards Container */
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards-container .timeline-card:nth-child(odd) {
+    margin-top: 1rem;
+}
+
+.cards-container .timeline-card:nth-child(even) {
+    margin-top: 7rem;
+}
+
+
+
+/* Timeline Cards */
+.timeline-card {
+    max-width: 350px;
+    min-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.02);
+    border: none;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    position: relative;
+    overflow: visible;
+    cursor: pointer;
+    /* Add padding to allow glow to extend */
+    margin: 20px auto;
+    animation: fadeInCard 0.8s ease-out forwards;
+}
+
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.timeline-card:hover {
+    transform: scale(1.1);
+}
+
+.timeline-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Card Image */
+.card-image {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.timeline-card:hover .card-image img {
+    filter: brightness(1.2) drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+}
+
+/* Card Content */
+.card-content {
+    position: relative;
+    z-index: 2;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    transition: all 0.3s ease;
+}
+
+.card-title {
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+    /* margin-bottom: 0rem; */
+    line-height: 1.3;
+    transition: all 0.3s ease;
+}
+
+/* Card title colors based on type */
+.work-card .card-title {
+    color: var(--work-color);
+}
+
+.project-card .card-title {
+    color: var(--project-color);
+}
+
+.extracurricular-card .card-title {
+    color: var(--extracurricular-color);
+}
+
+.awards-card .card-title {
+    color: var(--awards-color);
+}
+
+.milestone-card .card-title {
+    color: var(--milestones-color);
+}
+
+.education-card .card-title {
+    color: var(--education-color);
+}
+
+.timeline-card:hover .card-title {
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+}
+
+.card-period {
+    font-family: "Helvetica", sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 1px; */
+}
+
+.card-subtitle {
+    font-family: "Helvetica", sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    font-weight: 600;
+    /* letter-spacing: 0.55px; */
+}
+
+.card-description {
+    font-family: "Helvetica", sans-serif;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.45;
+    margin-bottom: 0;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+}
+
+/* Timeline Footer */
+.timeline-footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 3rem 0;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
+}
+
+.footer-text {
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.footer-description {
+    font-family: "Helvetica", sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.3;
+    max-width: 750px;
+    margin: 0 auto 1.5rem;
+}
+
+/* ===== TIMELINE RESPONSIVE DESIGN ===== */
+
+/* Tablet and smaller desktop */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 1rem;
+    }
+    
+    .timeline-description {
+        font-size: 1rem;
+    }
+    
+    .year-header {
+        font-size: 2rem;
+    }
+    
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+    
+    .cards-container .timeline-card:nth-child(even) {
+        margin-top: 0;
+    }
+    
+    .timeline-card {
+        width: 95%;
+        max-width: 300px;
+        padding: 0.75rem;
+    }
+    
+    .card-content {
+        padding: 0;
+        gap: 0.5rem;
+    }
+    
+    .card-image {
+        height: 120px;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    
+    .timeline-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .year-header {
+        font-size: 1.5rem;
+    }
+    
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .cards-container .timeline-card:nth-child(even) {
+        margin-top: 0;
+    }
+    
+    .timeline-card {
+        width: 80%;
+        max-width: none;
+        padding: 0.5rem;
+    }
+    
+    .card-image {
+        height: 150px;
+    }
+    
+    .card-content {
+        padding: 0;
+        gap: 0.5rem;
+    }
+} 

@@ -1,0 +1,234 @@
+/* ===== LIZ'S PERSONAL WEBSITE STYLES ===== */
+
+/* ===== GLOBAL STYLES ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+*:focus {
+    outline: 2px solid #38bdf8;
+    outline-offset: 2px;
+}
+
+/* ===== STARFIELD BACKGROUND ===== */
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 4px white, 0 0 8px white;
+    z-index: 1;
+}
+
+#starfield {
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* ===== MAIN PAGE COMPONENTS ===== */
+
+/* Page fade-in animation */
+@keyframes fadeInMain {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutMain {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Profile Image */
+.profile-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInMain 1.5s ease-out forwards;
+    animation-delay: 0.1s;
+}
+
+.profile-image img {
+    transform-origin: center;
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+/* Circular Text */
+.circular-text-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    max-width: 80vmin;
+    width: 400px;
+    height: 400px;
+    pointer-events: none;
+    opacity: 0;
+    animation: fadeInMain 1.5s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+text {
+    fill: white;
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-variant-ligatures: none;
+    letter-spacing: 6px;
+    transform-origin: 250px 250px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.textcircle {
+    transform-origin: 250px 250px;
+}
+
+.textcircle text {
+    fill: white;
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-variant-ligatures: none;
+    letter-spacing: 6px;
+    transform-origin: 250px 250px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.textcircle:hover text {
+    fill: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.7));
+    font-size: 24px;
+}
+
+/* Secondary Circular Text */
+.circular-text-svg-secondary {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    max-width: 100vmin;
+    width: 500px;
+    height: 500px;
+    pointer-events: none;
+    opacity: 0;
+    animation: fadeInMain 1.5s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+.textcircle2 {
+    transform-origin: 500px 500px;
+}
+
+.textcircle2 text {
+    fill: rgba(255, 255, 255, 0.7);
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-variant-ligatures: none;
+    letter-spacing: 6px;
+    transform-origin: 500px 500px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    animation: rotate-slow 90s linear infinite;
+    pointer-events: auto;
+}
+
+.textcircle2:hover text {
+    fill: rgba(255, 255, 255, 1);
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+    font-size: 33px;
+}
+
+.circular-text-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.circular-text-svg-secondary:hover {
+    transform: translate(-50%, -50%);
+}
+
+/* Social Footer */
+.social-footer {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0;
+    animation: fadeInMain 1.5s ease-out forwards;
+    animation-delay: 0.9s;
+}
+
+.social-link {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    filter: brightness(0) invert(1);
+    transition: opacity 0.2s ease-in-out;
+}
+
+.social-link:hover .social-icon {
+    opacity: 1;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-slow {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ===== MAIN PAGE RESPONSIVE DESIGN ===== */
+
+/* Tablet and smaller desktop */
+@media (max-width: 768px) {
+    .circular-text-svg {
+        width: 300px;
+        height: 300px;
+    }
+    
+    text {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+} 

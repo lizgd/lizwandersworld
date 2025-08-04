@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liz Dorman</title>
+    <meta name="description" content="Hi, I'm Liz">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+    <!-- Star Field Background -->
+    <div id="starfield" class="fixed inset-0 z-0"></div>
+    
+    <!-- Profile Image -->
+    <div class="profile-image">
+        <img 
+            src="assets/liz_squiggly_prof_pic.png" 
+            alt="Liz Dorman" 
+            class="w-40 h-40 object-cover shadow-2xl hover-lift hover-spin"
+            style="max-width: 30vw; max-height: 30vw;"
+        >
+    </div>
+        
+    <!-- Circular Text -->
+    <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" class="circular-text-svg">
+        <title>Circular Text Path</title>
+        <defs>
+          <path id="textcircle" d="M250,400
+                       a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate(12,250,250)" />
+        </defs>
+        <g class="textcircle">
+          <text textLength="940">
+            <textPath 
+                      xlink:href="#textcircle" 
+                      aria-label="LIZ DORMAN •••• hi ••••" 
+                      textLength="940">
+              liz dorman •••• hey ••••&nbsp;
+            </textPath>
+          </text>
+        </g>
+      </svg>
+
+      <!-- Second Circular Text -->
+      <a href="#" class="circular-text-link">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" class="circular-text-svg-secondary">
+          <title>Secondary Circular Text Path</title>
+          <defs>
+            <path id="textcircle2" d="M500,950
+                         a450,450 0 0,1 0,-900a450,450 0 0,1 0,900Z" transform="rotate(12,500,500)" />
+          </defs>
+          <g class="textcircle2">
+            <text textLength="470">
+              <textPath 
+                        xlink:href="#textcircle2" 
+                        aria-label="what i've done •••• about me ••••" 
+                        textLength="400">
+                what i've done
+              </textPath>
+            </text>
+          </g>
+        </svg>
+      </a>
+        
+        <!-- Social Footer -->
+        <div class="social-footer">
+            <div class="flex justify-center space-x-8">
+                <a href="https://x.com/lizwandersworld" class="social-link">
+                    <img src="assets/icons/instagram.svg" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/liz_explores_world/" class="social-link">
+                    <img src="assets/icons/twitter.svg" alt="Twitter/X" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/elizabeth-dorman-4031a2124/" class="social-link">
+                    <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
+        </div>
+    
+    <!-- JavaScript -->
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html> 
