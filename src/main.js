@@ -119,16 +119,22 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.circular-text-svg').addEventListener('click', handleClick);
     
     // Handle transition to whativedone page
-    const circularTextLink = document.querySelector('.circular-text-link');
-    if (circularTextLink) {
-        circularTextLink.addEventListener('click', (e) => {
+    const circularTextLinks = document.querySelectorAll('.circular-text-link');
+    circularTextLinks.forEach((link, index) => {
+        link.addEventListener('click', (e) => {
             e.preventDefault();
-            handleLightspeedTransition();
+            if (index === 0) {
+                // First link (what i've done)
+                handleLightspeedTransition('whativedone.html');
+            } else if (index === 1) {
+                // Second link (about me)
+                handleLightspeedTransition('aboutme.html');
+            }
         });
-    }
+    });
     
-    function handleLightspeedTransition() {
-        console.log('Starting lightspeed transition...');
+    function handleLightspeedTransition(destinationPage = 'whativedone.html') {
+        console.log('Starting lightspeed transition to', destinationPage);
         
         // Get all elements to fade out
         const elementsToFade = [
@@ -137,6 +143,12 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.circular-text-svg-secondary'),
             document.querySelector('.social-footer')
         ];
+        
+        // Add the third circular text to fade out as well
+        const thirdCircularText = document.querySelectorAll('.circular-text-svg-secondary')[1];
+        if (thirdCircularText) {
+            elementsToFade.push(thirdCircularText);
+        }
         
         // Fade out all elements with the fadeOutMain animation
         elementsToFade.forEach(element => {
@@ -158,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Navigate to the new page after starfield fades
             setTimeout(() => {
-                window.location.href = 'whativedone.html';
+                window.location.href = destinationPage;
             }, 100);
         }, 500);
     }

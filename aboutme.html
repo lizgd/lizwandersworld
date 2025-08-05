@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Liz</title>
+    <meta name="description" content="About Liz Dorman">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="./src/aboutme.css">
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+    <!-- Star Field Background -->
+    <div id="starfield" class="fixed inset-0 z-0"></div>
+    
+    <!-- Content Container -->
+    <div class="content-container">
+        <div class="max-w-4xl mx-auto px-6 py-12 text-center">
+            <!-- Profile Image -->
+            <div class="profile-nav">
+                <img 
+                    src="assets/liz_squiggly_prof_pic.png" 
+                    alt="Liz Dorman" 
+                    class="profile-pic-nav"
+                >
+            </div>
+            
+            <!-- <h1 class="about-title">About Me</h1> -->
+            
+            <div class="about-content">
+                <p class="about-paragraph">
+                    Liz Dorman is a technologist, design engineer, and world wanderer currently exploring how to allow anyone to build their own personality-full AI devices, diving into thought strands such as modular ai software infrastructures to hardware manufacturing techniques at all scales.
+                    <br>
+                    <br>
+                    She previously designed novel AI wearable interfaces at Humane, prototyped AR/VR futures at Apple on the team that made the vision pro, conducted BCI research in Hong Kong, and researched collaborative augmented reality experiences at Princeton University, where she studied CS and architecture. 
+                    <br>
+                    <br>
+                    The strings that run through her work are increasing the sense of curiosity and awe we feel towards the world empowered through our computing interfaces and meshing the digital world with physical space.
+                    <br>
+                    <br>
+                    <span class="highlight">It's time for a new era of computing.</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Social Footer -->
+    <div class="social-footer">
+        <div class="flex justify-center space-x-8">
+            <a href="https://www.instagram.com/liz_explores_world/" class="social-link">
+                <img src="assets/icons/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://x.com/lizwandersworld" class="social-link">
+                <img src="assets/icons/twitter.svg" alt="Twitter/X" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/elizabeth-dorman-4031a2124/" class="social-link">
+                <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script type="module" src="./src/aboutme.js"></script>
+</body>
+</html> 
