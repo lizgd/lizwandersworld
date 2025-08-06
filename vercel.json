@@ -3,6 +3,6 @@
     "cleanUrls": true,
     "trailingSlash": false,
     "redirects": [
-      { "source": "/", "destination": "/index.html", "permanent": true }
+      { "source": "/", "destination": "/index.html", "permanent": false }
     ]
   }
