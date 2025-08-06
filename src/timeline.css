@@ -213,10 +213,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
     margin-bottom: 1rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: blue;
+    /* max-width: 800px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* background-color: blue; */
 }
 
 .cards-container .timeline-card:nth-child(odd) {
@@ -246,7 +246,7 @@
     overflow: visible;
     cursor: pointer;
     /* Add padding to allow glow to extend */
-    margin: 20px auto;
+    /* margin: 0px auto; */
     animation: fadeInCard 0.8s ease-out forwards;
 }
 
@@ -464,10 +464,10 @@
     }
     
     .timeline-card {
-        width: 90%;
-        max-width: none; /* Remove max-width constraint */
+        /* width: 100%; */
+        max-width: 85vw; /* Remove max-width constraint */
         padding: 0.5rem;
-        background-color: red;
+        /* background-color: red; */
     }
     
     .card-image img {
