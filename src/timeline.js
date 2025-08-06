@@ -10,7 +10,7 @@ const timelineData = {
             {
                 title: "exploring", 
                 period: "August 2025 - Present",
-                subtitle: "new era",
+                subtitle: "a new era",
                 // description: "more soon",
                 // image: "assets/images/hp_iq_logo.png",
                 type: "work",
