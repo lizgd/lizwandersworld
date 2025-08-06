@@ -17,6 +17,15 @@ const timelineData = {
                 // link: "https://www.hp-iq.com/"
             },
             {
+                title: "Interface.Click", 
+                period: "ongoing",
+                subtitle: "Uniting the Computer Kiddos",
+                description: "Community of wonderful humans at the intersection of interaction, computing, and entrepreneurship. Bimonthly events.",
+                image: "assets/images/2025/interfaceclick.png",
+                type: "extracurricular",
+                link: "https://www.interface.click/"
+            },
+            {
                 title: "Senior Product Engineer, Design", 
                 period: "March - July 2025",
                 subtitle: "HP IQ",
