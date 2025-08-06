@@ -415,9 +415,9 @@
 @media (max-width: 750px) {
     
     .timeline-title {
-        font-size: 3rem;
-        padding-left: 5%;
-        padding-right: 5%;
+        font-size: 2.7rem;
+        padding-left: 3%;
+        padding-right: 3%;
         /* width: 85%; */
         /* background-color: green; */
         text-align: center;
@@ -425,7 +425,7 @@
 
     .timeline-description {
         font-size: 1rem;
-        width: 85%;
+        width: 90%;
     }
 
     .timeline-filters {
@@ -441,7 +441,7 @@
     }
     
     .year-header {
-        font-size: 5em;
+        font-size: 3em;
     }
 
     .year-subtitle {
@@ -461,7 +461,7 @@
     }
     
     .timeline-card {
-        width: 85%; /* Fill 80% of screen width */
+        width: 90%; /* Fill 80% of screen width */
         max-width: none; /* Remove max-width constraint */
         padding: 1rem;
     }
