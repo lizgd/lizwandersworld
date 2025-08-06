@@ -463,9 +463,9 @@
     }
     
     .timeline-card {
-        width: 95%;
+        width: 90%;
         max-width: none; /* Remove max-width constraint */
-        padding: 1rem;
+        /* padding: 1rem; */
     }
     
     .card-image img {
