@@ -239,42 +239,7 @@ text {
     transform: translate(-50%, -50%);
 }
 
-/* Social Footer */
-.social-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem 0;
-    text-align: center;
-    z-index: 10;
-    opacity: 0;
-    animation: fadeInMain 1.5s ease-out forwards;
-    animation-delay: 0.9s;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-}
 
-.social-link {
-    display: inline-block;
-    transition: transform 0.2s ease-in-out;
-}
-
-.social-link:hover {
-    transform: scale(1.1) rotate(360deg);
-    transition: transform 0.3s ease-in-out;
-}
-
-.social-icon {
-    width: 32px;
-    height: 32px;
-    opacity: 0.5;
-    filter: brightness(0) invert(1);
-    transition: opacity 0.2s ease-in-out;
-}
-
-.social-link:hover .social-icon {
-    opacity: 1;
-}
 
 /* ===== ANIMATIONS ===== */
 @keyframes rotate {

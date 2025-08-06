@@ -1,0 +1,87 @@
+/* ===== SOCIAL FOOTER STYLES ===== */
+
+/* Animation for social footer */
+@keyframes fadeInMain {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Default social footer (for index page) */
+.social-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    animation: fadeInMain 1.5s ease-out forwards;
+    animation-delay: 0.9s;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.social-link {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-link:hover {
+    transform: scale(1.1) rotate(360deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    filter: brightness(0) invert(1);
+    transition: opacity 0.2s ease-in-out;
+}
+
+.social-link:hover .social-icon {
+    opacity: 1;
+}
+
+/* Override for scrollable pages (about, nutshell, whativedone) */
+.scrollable-page .social-footer {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    margin-top: 2rem;
+    padding: 2rem 0 1rem 0;
+    background: none !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .social-footer {
+        padding: 0.5rem 0;
+    }
+    
+    .social-icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .scrollable-page .social-footer {
+        margin-top: 1rem;
+        padding: 1rem 0 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-footer {
+        padding: 0.25rem 0;
+    }
+    
+    .social-icon {
+        width: 20px;
+        height: 20px;
+    }
+} 
