@@ -425,7 +425,7 @@
 
     .timeline-description {
         font-size: 1rem;
-        width: 95%;
+        /* width: %; */
     }
 
     .timeline-filters {
