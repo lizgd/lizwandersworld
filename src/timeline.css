@@ -466,6 +466,7 @@
         width: 90%;
         max-width: none; /* Remove max-width constraint */
         padding: 0.5rem;
+        background-color: red;
     }
     
     .card-image img {
