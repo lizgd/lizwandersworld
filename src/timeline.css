@@ -465,7 +465,7 @@
     .timeline-card {
         width: 90%;
         max-width: none; /* Remove max-width constraint */
-        /* padding: 1rem; */
+        padding: 0.5rem;
     }
     
     .card-image img {
