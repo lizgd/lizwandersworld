@@ -455,6 +455,7 @@
         /* background-color: red; */
         margin-bottom: 3rem;
         margin-top: 3rem;
+        max-width: none;
     }
     
     .cards-container .timeline-card:nth-child(even) {
