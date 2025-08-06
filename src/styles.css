@@ -3,6 +3,11 @@
 /* ===== GLOBAL STYLES ===== */
 html {
     scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
 }
 
 /* Focus styles for accessibility */
@@ -127,7 +132,7 @@ text {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 4;
-    max-width: 100vmin;
+    max-width: 90vmin;
     width: 500px;
     height: 500px;
     pointer-events: none;
@@ -228,14 +233,17 @@ text {
 
 /* Social Footer */
 .social-footer {
-    position: relative;
-    margin-top: auto;
-    padding: 2rem 0 1rem 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
     text-align: center;
     z-index: 10;
     opacity: 0;
     animation: fadeInMain 1.5s ease-out forwards;
     animation-delay: 0.9s;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
 }
 
 .social-link {
@@ -275,15 +283,43 @@ text {
 
 /* ===== MAIN PAGE RESPONSIVE DESIGN ===== */
 
-/* Tablet and smaller desktop */
-/* @media (max-width: 768px) {
+/* Mobile screens */
+@media (max-width: 768px) {
     .circular-text-svg {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
+    }
+    
+    .circular-text-svg-secondary {
+        width: 350px;
+        height: 350px;
     }
     
     text {
-        font-size: 18px;
-        letter-spacing: 4px;
+        font-size: 16px;
+        letter-spacing: 3px;
     }
-}  */
+    
+    .textcircle2 text,
+    .textcircle3 text,
+    .textcircle4 text {
+        font-size: 35px;
+        /* letter-spacing: 4px; */
+    }
+    
+    .profile-image img {
+        width: 120px !important;
+        height: 120px !important;
+        max-width: 25vw !important;
+        max-height: 25vw !important;
+    }
+    
+    .social-footer {
+        padding: 0.5rem 0;
+    }
+    
+    .social-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
