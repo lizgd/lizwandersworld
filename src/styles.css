@@ -286,13 +286,4 @@ text {
         max-width: 25vw !important;
         max-height: 25vw !important;
     }
-    
-    .social-footer {
-        padding: 0.5rem 0;
-    }
-    
-    .social-icon {
-        width: 24px;
-        height: 24px;
-    }
 }
