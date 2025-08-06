@@ -7,6 +7,14 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    assetsDir: 'assets'
+    assetsDir: 'assets',
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        aboutme: 'aboutme.html',
+        nutshell: 'nutshell.html',
+        whativedone: 'whativedone.html'
+      }
+    }
   }
 }) 
