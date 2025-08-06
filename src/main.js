@@ -129,6 +129,9 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (index === 1) {
                 // Second link (about me)
                 handleLightspeedTransition('aboutme.html');
+            } else if (index === 2) {
+                // Third link (in a nutshell)
+                handleLightspeedTransition('nutshell.html');
             }
         });
     });
@@ -140,15 +143,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const elementsToFade = [
             document.querySelector('.profile-image'),
             document.querySelector('.circular-text-svg'),
-            document.querySelector('.circular-text-svg-secondary'),
             document.querySelector('.social-footer')
         ];
         
-        // Add the third circular text to fade out as well
-        const thirdCircularText = document.querySelectorAll('.circular-text-svg-secondary')[1];
-        if (thirdCircularText) {
-            elementsToFade.push(thirdCircularText);
-        }
+        // Add all circular text elements
+        const circularTextElements = document.querySelectorAll('.circular-text-svg-secondary');
+        elementsToFade.push(...circularTextElements);
         
         // Fade out all elements with the fadeOutMain animation
         elementsToFade.forEach(element => {

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liz in a Nutshell</title>
+    <meta name="description" content="Liz Dorman in a nutshell">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="./src/aboutme.css">
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+    <!-- Star Field Background -->
+    <div id="starfield" class="fixed inset-0 z-0"></div>
+    
+    <!-- Main Container -->
+    <div class="flex flex-col min-h-screen">
+        <!-- Content Container -->
+        <div class="content-container flex-1">
+            <div class="max-w-4xl mx-auto px-6 py-12 text-center">
+                <!-- Profile Image -->
+                <div class="profile-nav">
+                    <img 
+                        src="assets/liz_squiggly_prof_pic.png" 
+                        alt="Liz Dorman" 
+                        class="profile-pic-nav"
+                    >
+                </div>
+                
+                <div class="about-content">
+                    <div class="nutshell-section">
+                        <h2 class="nutshell-title">Liz in a Nutshell</h2>
+                        
+                        <h3 class="nutshell-category">Academics</h3>
+                        <p class="nutshell-text">
+                            Graduated with a major in Computer Science and certificates in Architecture & Computation and Technology & Society from Princeton University in 2023.
+                        </p>
+                        
+                        <h3 class="nutshell-category">What I'm Doing</h3>
+                        <p class="nutshell-text">
+                            Something new. Currently at Interact Residency and South Park Commons.
+                        </p>
+                        
+                        <h3 class="nutshell-category">What I Did</h3>
+                        <p class="nutshell-text">
+                            Helped create the future of computing @ Humane. Prototyped some cool things I can't talk about @ Apple AR/VR. Organized conferences, retreats, and communities. Tinkered.
+                        </p>
+                        
+                        <h3 class="nutshell-category">What Captivates Me</h3>
+                        <p class="nutshell-text">
+                            Human Augmentation, Cyborgism, Architecture, Digital Fabrication, Space, Speculative Design, super deep tech things, how culture meshes with the digital... oh my literally anything and everything that has the power to change how we view and create our future world!
+                        </p>
+                        
+                        <h3 class="nutshell-category">What I'm Hopeful About</h3>
+                        <p class="nutshell-text">
+                            Technology that successfully connects us to the physical environment and to each other. A cambrian explosion of funky new devices that make the world a more fascinating place.
+                        </p>
+                        
+                        <h3 class="nutshell-category">What I'm Scared About</h3>
+                        <p class="nutshell-text">
+                            An internet society fueled by self promotion and social proof. The Metaverse. Power over life experiences concentrated in the hands of a few.
+                        </p>
+                        
+                        <h3 class="nutshell-category">Lifelong Goal</h3>
+                        <p class="nutshell-text">
+                            Travel around all 196 countries (currently at 70!). Always looking for travel buddies - reach out!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Social Footer -->
+        <div class="social-footer">
+            <div class="flex justify-center space-x-8">
+                <a href="https://www.instagram.com/liz_explores_world/" class="social-link">
+                    <img src="assets/icons/instagram.svg" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://x.com/lizwandersworld" class="social-link">
+                    <img src="assets/icons/twitter.svg" alt="Twitter/X" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/elizabeth-dorman-4031a2124/" class="social-link">
+                    <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script type="module" src="./src/nutshell.js"></script>
+</body>
+</html> 

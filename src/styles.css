@@ -228,10 +228,10 @@ text {
 
 /* Social Footer */
 .social-footer {
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    margin-top: auto;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
     z-index: 10;
     opacity: 0;
     animation: fadeInMain 1.5s ease-out forwards;

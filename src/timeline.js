@@ -668,7 +668,7 @@ function createTimelineHTML(groupedData) {
 These technical endeavors combined with traveling around the world (currently at 70 countries!) with my family made me the person I am today. They made me endlessly curious, not afraid to ask stupid questions, and approach the world with eyes and mind wide open.
         <br>
         <br>
-        <span class="highlight">I strive to keep this childish innocence in whatever I do. </span>
+        <span class="highlight">I strive to keep this childlike wonder in whatever I do. </span>
             </p>
         </div>
     `;

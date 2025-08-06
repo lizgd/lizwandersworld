@@ -78,7 +78,7 @@
 }
 
 .timeline-description {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Figtree", sans-serif;
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.5;
@@ -162,7 +162,7 @@
 }
 
 .year-subtitle {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Figtree", sans-serif;
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
@@ -174,7 +174,7 @@
 
 /* Timeline line - only visible in 2-column layout */
 .year-section::after {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Figtree", sans-serif;
     content: '';
     position: absolute;
     left: 50%;
@@ -297,6 +297,7 @@
 
 .timeline-card:hover .card-image img {
     filter: brightness(1.05) drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+    transform: scale(1.05) rotate(2deg);
 }
 
 /* Card Content */
@@ -350,7 +351,7 @@
 }
 
 .card-period {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Figtree", sans-serif;
     font-weight: 500;
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.6);
@@ -360,7 +361,7 @@
 }
 
 .card-subtitle {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Figtree", sans-serif;
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 1);
     margin-top: 0.75rem;
@@ -371,7 +372,7 @@
 }
 
 .card-description {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Figtree", sans-serif;
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.45;
@@ -397,7 +398,7 @@
 }
 
 .footer-description {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Figtree", sans-serif;
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.3;
