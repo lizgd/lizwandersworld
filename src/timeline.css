@@ -425,6 +425,7 @@
 
     .timeline-description {
         font-size: 1rem;
+        max-width: none;
         /* width: %; */
     }
 
@@ -461,7 +462,7 @@
     }
     
     .timeline-card {
-        width: 90%; /* Fill 80% of screen width */
+        width: 95%;
         max-width: none; /* Remove max-width constraint */
         padding: 1rem;
     }
