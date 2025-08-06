@@ -3,10 +3,18 @@
 /* ===== GLOBAL STYLES ===== */
 html {
     scroll-behavior: smooth;
-    overflow: hidden;
 }
 
 body {
+    /* Overflow hidden only for index page */
+}
+
+/* Prevent scrolling only on index page */
+.index-page {
+    overflow: hidden;
+}
+
+.index-page html {
     overflow: hidden;
 }
 

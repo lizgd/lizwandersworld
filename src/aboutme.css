@@ -139,10 +139,22 @@
     font-weight: 400;
 }
 
+/* ===== SOCIAL FOOTER OVERRIDE ===== */
+/* Override fixed positioning for about and nutshell pages */
+.social-footer {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    margin-top: 2rem;
+    padding: 2rem 0 1rem 0;
+    background: none !important;
+}
+
 /* ===== ABOUT ME RESPONSIVE DESIGN ===== */
 
 /* Mobile */
-@media (max-width: 768) {
+@media (max-width: 768px) {
     .about-paragraph {
         font-size: 0.9rem;
         margin-bottom: 0.5rem;
@@ -156,5 +168,10 @@
     
     .nutshell-section {
         margin-bottom: 1.5rem;
+    }
+    
+    .social-footer {
+        margin-top: 1rem;
+        padding: 1rem 0 0.5rem 0;
     }
 } 
