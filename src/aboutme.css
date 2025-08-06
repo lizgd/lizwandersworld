@@ -61,6 +61,7 @@
     align-items: center;
     gap: 1.5rem;
     flex: 1;
+    justify-content: center; /* Center the content within its container */
 }
 
 .about-paragraph {
@@ -86,6 +87,10 @@
     text-align: left;
     margin-top: 3rem;
     margin-bottom: 4rem; /* Add bottom margin to ensure space for footer */
+    flex: 1; /* Allow it to grow and center */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center when content fits */
 }
 
 .nutshell-title {
@@ -136,32 +141,12 @@
 
 /* ===== ABOUT ME RESPONSIVE DESIGN ===== */
 
-/* Tablet and smaller desktop */
-@media (max-width: 768px) {
-    .content-container {
-        padding: 0.5rem;
-    }
-    
-    .about-paragraph {
-        font-size: 0.95rem;
-        margin-bottom: 3rem;
-    }
-    
-    .profile-pic-nav {
-        width: 80px;
-        height: 80px;
-    }
-    
-    .nutshell-section {
-        margin-bottom: 3rem;
-    }
-}
-
 /* Mobile */
-@media (max-width: 480px) {
+@media (max-width: 768) {
     .about-paragraph {
         font-size: 0.9rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 0.5rem;
+        width: 90%;
     }
     
     .profile-pic-nav {
@@ -170,6 +155,6 @@
     }
     
     .nutshell-section {
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.5rem;
     }
 } 

@@ -3,9 +3,9 @@
 /* Card Type Colors */
 :root {
     --work-color: #ff8a41;      /* Blue for work experience */
-    --project-color: #e0ff2e;    /* Purple for projects */
+    --project-color: #dcff16;    /* Purple for projects */
     --extracurricular-color: #aff8e2; /* Green for extracurricular */
-    --awards-color: #ffd322;     /* Orange for awards */
+    --awards-color: #ffd016;     /* Orange for awards */
     --milestones-color: #ff4958; /* Red for milestones */
     --education-color: #e9b0ff;  /* Violet for education */
 }
@@ -65,6 +65,9 @@
     text-align: center;
     margin-bottom: 4rem;
     padding-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
 }
 
 .timeline-title {
@@ -96,6 +99,7 @@
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+    /* background-color: red; */
 }
 
 .filter-btn {
@@ -186,13 +190,6 @@
     z-index: 1;
 }
 
-/* Hide timeline line in single column layout */
-@media (max-width: 768px) {
-    .year-section::after {
-        display: none;
-    }
-}
-
 .year-header {
     font-family: "MuseoModerno", sans-serif;
     font-size: 1.7rem;
@@ -277,7 +274,7 @@
     width: 100%;
     /* height: 100%; */
     display: flex;
-    align-items: left;
+    justify-content: left;
     /* justify-content: center; */
     position: relative;
     border-radius: 12px;
@@ -414,81 +411,81 @@
 
 /* ===== TIMELINE RESPONSIVE DESIGN ===== */
 
-/* Tablet and smaller desktop */
-@media (max-width: 768px) {
-    .content-container {
+/* Mobile */
+@media (max-width: 750px) {
+    
+    .timeline-title {
+        font-size: 3rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        /* width: 85%; */
+        /* background-color: green; */
+        text-align: center;
+    }
+
+    .timeline-description {
+        font-size: 1rem;
+        width: 85%;
+    }
+
+    .timeline-filters {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        margin-bottom: 6rem;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        /* background-color: red; */
+    }
+    
+    .year-header {
+        font-size: 5em;
+    }
+
+    .year-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem; /* Even larger gap for mobile */
+        /* background-color: red; */
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+    
+    .cards-container .timeline-card:nth-child(even) {
+        margin-top: 0;
+    }
+    
+    .timeline-card {
+        width: 85%; /* Fill 80% of screen width */
+        max-width: none; /* Remove max-width constraint */
         padding: 1rem;
     }
     
-    .timeline-description {
-        font-size: 1rem;
+    .card-image img {
+        max-width: 100%;
+        max-height: 200px;
+        justify-content: center;
     }
-    
-    .year-header {
-        font-size: 2rem;
-    }
-    
-    .cards-container {
-        grid-template-columns: 1fr;
-        gap: 0.25rem;
-    }
-    
-    .cards-container .timeline-card:nth-child(even) {
-        margin-top: 0;
-    }
-    
-    .timeline-card {
-        width: 95%;
-        max-width: 300px;
-        padding: 0.75rem;
-    }
-    
-    .card-content {
-        padding: 0;
-        gap: 0.5rem;
-    }
-    
-    .card-image {
-        height: 120px;
-    }
-    
-    .card-title {
-        font-size: 1.1rem;
-    }
-}
 
-/* Mobile */
-@media (max-width: 480px) {
-    
-    .timeline-subtitle {
-        font-size: 1.2rem;
-    }
-    
-    .year-header {
-        font-size: 1.5rem;
-    }
-    
-    .cards-container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .cards-container .timeline-card:nth-child(even) {
-        margin-top: 0;
-    }
-    
-    .timeline-card {
-        width: 80%;
-        max-width: none;
-        padding: 0.5rem;
-    }
-    
     .card-image {
-        height: 150px;
+        justify-content: center;
     }
     
     .card-content {
         padding: 0;
         gap: 0.5rem;
+    }
+
+    .footer-description {
+        width: 90%;
+    }
+
+    .year-section::after {
+        display: none;
     }
 } 

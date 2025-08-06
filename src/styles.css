@@ -276,7 +276,7 @@ text {
 /* ===== MAIN PAGE RESPONSIVE DESIGN ===== */
 
 /* Tablet and smaller desktop */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .circular-text-svg {
         width: 300px;
         height: 300px;
@@ -286,4 +286,4 @@ text {
         font-size: 18px;
         letter-spacing: 4px;
     }
-} 
+}  */
