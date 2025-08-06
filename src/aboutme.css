@@ -31,7 +31,7 @@
     z-index: 10;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0rem;
     min-height: 100vh;
     opacity: 0;
     animation: fadeInPage 1.5s ease-out forwards;
@@ -149,7 +149,7 @@
     .about-paragraph {
         font-size: 0.9rem;
         margin-bottom: 0.5rem;
-        width: 90%;
+        width: 95%;
         background-color: red;
     }
     
