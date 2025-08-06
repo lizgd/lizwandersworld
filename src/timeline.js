@@ -637,7 +637,7 @@ function createTimelineHTML(groupedData) {
 
         <div class="timeline-header">
             <h1 class="timeline-title">What I've Done - A Timeline</h1>
-            <p class="timeline-description">Because timelines put information into perspective,<br>& everything builds off what came before.</p>
+            <p class="timeline-description">Timelines put information into perspective,<br>& everything builds off what came before.</p>
         </div>
         
         <div class="timeline-filters">
