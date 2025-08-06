@@ -65,8 +65,8 @@
     }
     
     .social-icon {
-        width: 24px;
-        height: 24px;
+        width: 30px;
+        height: 30px;
     }
     
     .scrollable-page .social-footer {
@@ -74,14 +74,3 @@
         padding: 1rem 0 0.5rem 0;
     }
 }
-
-@media (max-width: 480px) {
-    .social-footer {
-        padding: 0.25rem 0;
-    }
-    
-    .social-icon {
-        width: 20px;
-        height: 20px;
-    }
-} 
