@@ -447,7 +447,7 @@ const timelineData = {
                 period: "May 2017",
                 subtitle: "Stuck with 2G? No Worries - Using Text Messages to Connect to the Internet",
                 description: "How can we still stay connected to information when off grid? Published in Makezine.",
-                image: "assets/images/2017/smsBot.png",
+                image: "assets/images/2017/smsbot.png",
                 type: "project",
                 link: "https://makezine.com/projects/sms-bot/?fbclid=IwAR24vAd0ReyZc0et6m2no58NNeNL5kJFy4aeR-1D7Ybw_xLOovD-meYMYhw"
             },
@@ -465,7 +465,7 @@ const timelineData = {
                 period: "May 2016 - August 2017",
                 subtitle: "App for High Schoolers to see who is in their Classes. Used by 90% of School District",
                 description: "In team of 3 designed, coded, and marketed app that became notorious at my high school with 2k+ users. Still an entrepreneurial project that is continued by students today!",
-                image: "assets/images/2017/classReveal.png",
+                image: "assets/images/2017/classreveal.png",
                 type: "project",
                 // link: "https://devpost.com/software/alzeimer-s-companion"
             },
