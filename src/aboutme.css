@@ -72,7 +72,7 @@
     margin: 0;
     font-weight: 400;
     margin-top: 3rem;
-    margin-bottom: 4rem; /* Add bottom margin to ensure space for footer */
+    margin-bottom: 3rem; /* Add bottom margin to ensure space for footer */
 }
 
 .about-paragraph .highlight {
@@ -149,6 +149,7 @@
         font-size: 0.9rem;
         margin-bottom: 0.5rem;
         width: 90%;
+        background-color: red;
     }
     
     .profile-pic-nav {
