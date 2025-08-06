@@ -5,6 +5,15 @@ import { createStarField, createShootingStar } from './utils/starfield.js';
 document.addEventListener('DOMContentLoaded', () => {
     console.log('🚀 Liz\'s Website Initialized');
     
+    // Handle browser back button navigation
+    window.addEventListener('pageshow', (event) => {
+        if (event.persisted) {
+            console.log('Page restored from cache - reinitializing...');
+            // Force a page reload to ensure clean state
+            window.location.reload();
+        }
+    });
+    
     // Create star field background with configurable speed
     const starfieldController = createStarField(1.5); // Speed of 1.5
     
