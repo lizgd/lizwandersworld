@@ -141,6 +141,9 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (index === 2) {
                 // Third link (in a nutshell)
                 handleLightspeedTransition('nutshell.html');
+            } else if (index === 3) {
+                // Fourth link (angeling)
+                handleLightspeedTransition('angel.html');
             }
         });
     });

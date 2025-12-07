@@ -40,7 +40,8 @@ export default defineConfig({
         main: 'index.html',
         aboutme: 'aboutme.html',
         nutshell: 'nutshell.html',
-        whativedone: 'whativedone.html'
+        whativedone: 'whativedone.html',
+        angel: 'angel.html'
       }
     }
   },

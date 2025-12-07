@@ -85,7 +85,7 @@
 .nutshell-section {
     max-width: 800px;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
     margin-top: 3rem;
     margin-bottom: 4rem; /* Add bottom margin to ensure space for footer */
     flex: 1; /* Allow it to grow and center */
